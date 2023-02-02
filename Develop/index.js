@@ -43,19 +43,20 @@ const questions = [{
     type: "input",
     message: "Please describe how to report bugs.",
     name: "bugs",
-    //!default: "this is how to report bugs",
+    default: "In the repository, navigate to the issues section and click on the link to report a bug/create an issue.",
 },
 {
-    //!type: "list",
+    type: "list",
     message: "What license would you like to use?",
     name: "license",
-    //!default: "MIT",
+    choices: ["MIT", "Apache 2.0", "GPL 3.0",],
+    default: "MIT",
 },
 {
     type: "input",
     message: "Please describe how to contribute.",
     name: "contribution",
-    //!default: "This is how to contribute",
+    default: "If you would like to contribute to this project, please fork the repo, create a new feature branch. Once you have finished, you can create a pull request.",
 }
 
 ];
@@ -70,7 +71,7 @@ function init() {
         fs.writeToFile("README.md", generateMarkdown(data), (err) => 
         err ? console.error(err) : console.log("Success!"));
     })
-    .then((response.name) => console.log(response)); 
+    .then((response.name) => console.log(response));
     //!do I have to do this for all questions?
 }
 
