@@ -1,5 +1,5 @@
 # Readme Generator
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Description
 
@@ -40,7 +40,7 @@ undefined
 To run tests, run the following command:
 
 ```
-undefined
+npm run test
 ```
 
 ## Questions
